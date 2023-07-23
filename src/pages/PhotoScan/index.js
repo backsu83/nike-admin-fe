@@ -8,7 +8,8 @@ import ColorBar from 'resources/icon/icon_color_bar.svg'
 import MainLogo from 'resources/icon/main_logo.svg'
 import MainImage from 'resources/icon/main_start_bg.svg'
 // const SERVER_URL = 'http://192.168.0.72:8080/'
-const SERVER_URL = 'http://13.124.134.96/'
+// const SERVER_URL = 'http://13.124.134.96/'
+const SERVER_URL = 'https://nsh-2f-flask.event-pages.com/'
 function PhotoScan() {
     const { custom_id } = useParams()
     const id = window.location.hash.split('?')[1]

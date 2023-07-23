@@ -2,8 +2,8 @@
 // const BASE_URL = 'http://localhost:5000/admin/'
 // const CLIENT_BASE_URL = 'http://localhost:5000/'
 
-const BASE_URL = "http://nsh-2f.event-pages.com:5000/admin/"
-const CLIENT_BASE_URL = "http://nsh-2f.event-pages.com:5000/"
+const BASE_URL = "https://nsh-2f-flask.event-pages.com/admin/"
+const CLIENT_BASE_URL = "https://nsh-2f-flask.event-pages.com/"
 
 
 //http://fig.asuscomm.com:5001
