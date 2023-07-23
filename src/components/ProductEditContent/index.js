@@ -349,7 +349,7 @@ function ProductEditContent() {
               </div>
             </div>
             <div className={styles.DetailInfoFullBox}>
-              <p className={styles.DetailTitle}>상품 옵션 설정 <button onClick={()=>{ optionEvent.openEditOption({}); }}>옵션 추가</button></p>
+              <p className={styles.DetailTitle}>상품 옵션 설정 <button onClick={()=>{ optionEvent.openEditOption({}); }}>옵션 추가.</button></p>
               <div className={styles.InfoContent}>
                 <div ref={optionRef} className={styles.OptionEditWrap}>
 

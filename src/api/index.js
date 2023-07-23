@@ -1,5 +1,11 @@
-const BASE_URL = '/admin/'
-// const BASE_URL = 'http://192.168.0.72:8080/admin/'
+// const BASE_URL = '/admin/'
+// const BASE_URL = 'http://localhost:5000/admin/'
+// const CLIENT_BASE_URL = 'http://localhost:5000/'
+
+const BASE_URL = "http://nsh-2f.event-pages.com:5000/admin/"
+const CLIENT_BASE_URL = "http://nsh-2f.event-pages.com:5000/"
+
+
 //http://fig.asuscomm.com:5001
 const COMMON_HEADER = {
     'Content-Type': 'application/json',
@@ -61,7 +67,7 @@ const getClientRequest = async (
     method = 'GET'
 ) => {
     return (
-        await fetch('/' + path, {
+        await fetch(CLIENT_BASE_URL + path, {
             method: method,
             headers: headers,
         })
