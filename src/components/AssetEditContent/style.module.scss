@@ -1,0 +1,177 @@
+.Container {
+    width: 100%;
+    padding: calc(100vw*(56/1920));
+    .DetailTitleBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: calc(100vw*(8/1920)) calc(100vw*(16/1920));
+        border: calc(100vw*(2/1920)) solid #000000;
+        & p {
+            font-size: calc(100vw*(24/1920));
+            font-weight: bold;
+            color: #ffffff;
+        }
+        & img {width: calc(100vw*(40/1920)); cursor: pointer;}
+    }
+    .DetailWrap {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: calc(100vw*(44/1920));
+        .DetailImgWrap {
+            width: calc(100vw*(600/1920));
+            .DetailTitle {
+                font-size: calc(100vw*(24/1920));
+                font-weight: bold;
+                padding-bottom: calc(100vw*(16/1920));
+            }
+            .Imgbox {
+                position: relative;
+                width: 100%; height: calc(100vw*(604/1920));
+                background: url('/resources/icon/icon_line.svg') no-repeat center/100% 100%;
+                & img {
+                    width: 320px; height: 100%;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+                & label {
+                    position: absolute; right: calc(100vw*(24/1920)); bottom: calc(100vw*(24/1920));
+                    font-size: calc(100vw*(16/1920));
+                    font-weight: bold;
+                    border-bottom: 1px solid #000000;
+                    cursor: pointer;
+                }
+            }
+        }
+        .DetailInfoWrap {
+            width: calc(100% - calc(100vw*(600/1920)));
+            padding-left: calc(100vw*(56/1920));
+            .DetailInfoInner {
+                width: 100%; height: calc(100vw*(580/1920));
+                .DetailInfoBox {width: calc(100vw*(442/1920));}
+                .DetailInfoFullBox {
+                    width: 100%;
+                    .InfoContent {
+                        display: flex;
+                        align-items: center;
+                        & p {
+                            display: flex;
+                            align-items: center;
+                            margin-right: calc(100vw*(24/1920));
+                            & span {
+                                display: flex;
+                                align-items: center;
+                                font-size: calc(100vw*(20/1920));
+                                font-weight: bold;
+                                margin-left: calc(100vw*(6/1920));
+                                & i {
+                                    position: static;
+                                    width: calc(100vw*(20/1920)); height: calc(100vw*(20/1920));
+                                    margin-right: calc(100vw*(2/1920));
+                                }
+                            }
+                        }
+                    }
+                }
+                .DetailTitle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: calc(100vw*(24/1920));
+                    font-weight: bold;
+                    padding: calc(100vw*(8/1920)) 0;
+                    .FileBtn {
+                        & input {display: none;}
+                        & label {font-size: calc(100vw*(20/1920)); font-weight: 400;
+                            border-bottom: 1px solid #000000; cursor: pointer;}
+                    }
+                    & input {font-size: calc(100vw*(20/1920));}
+                    & button {font-size: calc(100vw*(20/1920)); border-bottom: 1px solid #000000; cursor: pointer;}
+                }
+                .InfoContent {
+                    position: relative;
+                    width: 100%;
+                    padding: calc(100vw*(9/1920)) 0 calc(100vw*(38/1920));
+                    &::after {
+                        content: '';
+                        position: absolute; top: 0; left: 0;
+                        width: 100%; height: 1px;
+                        background-image: linear-gradient(to 
+                        right, black 38%, rgba(255,255,255,0) 0%);
+                        background-position: bottom;
+                        background-size: calc(100vw*(9/1920)) 1px;
+                        background-repeat: repeat-x;
+                    }
+                    .InputRow {
+                        display: flex;
+                        align-items: center;
+                        & input {
+                            width: calc(100vw*(240/1920));
+                            font-size: calc(100vw*(18/1920));
+                            border-bottom: 1px solid #000000;
+                            margin-left: calc(100vw*(5/1920));
+                            ::placeholder {color: #000000; font-size: calc(100vw*(18/1920));}
+                        }
+                    }
+                    & p {
+                        font-size: calc(100vw*(20/1920));
+                    }
+                    .CategoryWrap {
+                        display: flex;
+                        align-items: center;
+                        .CategoryBox {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            margin-right: calc(100vw*(20/1920));
+                            cursor: pointer;
+                
+                            & input {
+                                position: relative;
+                                width: calc(100vw*(24/1920)); height: calc(100vw*(24/1920));
+                                margin-right: calc(100vw*(4/1920));
+                                background: url('/resources/icon/icon_color.svg') no-repeat center/100%;
+                                cursor: pointer;
+                            }
+                            & input:checked::after {
+                                content: '';
+                                display: block;
+                                position: absolute; top: 50%; left: 50%;
+                                width: calc(100vw*(16/1920)); height: calc(100vw*(10/1920));
+                                background: url('/resources/icon/icon_checked.svg') no-repeat center/100%;
+                                transform: translate(-50%, -50%);
+                            }
+                            & label {
+                                font-family:'HelveticaNeue_bold';
+                                font-size: calc(100vw*(16/1920));
+                                border-bottom: calc(100vw*(2/1920)) solid #000000;
+                                cursor: pointer;
+                            }
+                            &:last-child {margin-right: 0;}
+                            .Blue {background: #2266AB;}
+                            .Green {background: #22AB2E;}
+                            .Purple {background: #5C22AB;}
+                            .Red {background: #AB3222;}
+                        }
+                    }
+                }
+
+            }
+            .PriceWrap {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+                & p {
+                    font-size: calc(100vw*(32/1920));
+                    font-weight: bold;
+                }
+                & div {
+                    display: flex; align-items: center;
+                    & > div {margin-left: calc(100vw*(26/1920));}
+                }
+            }
+        }
+    }
+}

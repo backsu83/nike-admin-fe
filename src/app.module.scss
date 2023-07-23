@@ -1,0 +1,304 @@
+/* reset scss */
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* font */
+@font-face {
+    font-family: 'Futura';
+    src: url('resources/font/Futura_Condensed_Extra_Bold.otf');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('resources/font/HelveticaNeue.otf');
+}
+@font-face {
+    font-family: 'HelveticaNeue_bold';
+    src: url('resources/font/HelveticaNeue_bold.otf');
+}
+@font-face {
+    font-family: 'Neue';
+    src: url('resources/font/NeuePixelGrotesk_Regular.ttf');
+}
+@font-face {
+    font-family: 'Pala';
+    src: url('resources/font/pala.ttf');
+}
+@font-face {
+    font-family: 'Palabi';
+    src: url('resources/font/palabi.ttf');
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    color: #000;
+    -webkit-tap-highlight-color: none;
+    line-height: 1.2;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url('./resources/image/background/line_pc.svg');
+    background-position: 50% 0;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+body,
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 100%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    letter-spacing: normal;
+}
+
+fieldset,
+img,
+abbr,
+acronym {
+    border: 0 none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 0 none;
+}
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+img,
+video {
+    border: 0;
+}
+audio,
+canvas,
+video {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+}
+img {
+    display: block;
+    image-rendering: -moz-auto; /*firefox*/
+    image-rendering: -o-auto; /*opera*/
+    image-rendering: -webkit-optimize-contrast; /*webkit*/
+    image-rendering: auto;
+    -ms-interpolation-mode: nearest-neighbor;
+    -webkit-perspective: 1;
+}
+ul,
+ol,
+dl {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+i {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,
+select,
+label {
+    vertical-align: middle;
+}
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+    font-weight: normal;
+    letter-spacing: normal;
+    background: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+button,
+input {
+    line-height: normal;
+    box-shadow: none;
+}
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+button,
+select {
+    text-transform: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+address {
+    font-style: normal;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fefefe;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e1e1e1;
+}
+
+#root {
+    min-height: -webkit-fill-available;
+}
+#scan {
+    min-height: -webkit-fill-available;
+}

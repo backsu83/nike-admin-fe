@@ -1,0 +1,45 @@
+  @mixin Container {
+    width: 1368px; 
+    margin: 0 auto;
+    @media screen and (max-width: 1620px) {
+      width: 100%;
+    }
+  }
+  
+  @mixin Section() {
+    width: 952px; min-height: calc(100vh - 210px); margin: 0 auto;
+    @media screen and (max-width: 1620px) {
+      width: calc(100vw*(950/1620)); min-height: calc(100vh - calc(100vw*(500/1620)));
+    }
+  }
+  
+
+  .SlideContainer {
+    width: 100%; margin: 0 auto;
+  }
+
+  .Container {
+    width: 1368px; margin: 0 auto;
+
+    @media screen and (max-width: 1620px) {
+      width: 100%;
+    }
+  }
+
+  .ContentFull {
+    width: 100%; min-height: calc(100vh - 210px);
+    margin: 0 auto;
+
+    @media screen and (max-width: 1620px) {
+      width: calc(100vw*(1280/1620)); min-height: calc(100vh - calc(100vw*(500/1620)));
+    }
+  }
+  
+  .ContentInner {
+    width: 952px; min-height: calc(100vh - 210px);
+    margin: 0 auto;
+
+    @media screen and (max-width: 1620px) {
+      width: calc(100vw*(950/1620)); min-height: calc(100vh - calc(100vw*(500/1620)));
+    }
+  }

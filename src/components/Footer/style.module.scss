@@ -1,0 +1,21 @@
+// tablete
+.FooterContainer {
+  width: 944px;
+  height: 80px;
+  background: tomato;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+// mobile
+@media screen and (max-width: 1370px) {
+  
+  .FooterContainer {
+    width: 100%; height: calc(100vw*(80/1370));
+    margin-top: calc(100vw*(100/1370));
+  }
+}

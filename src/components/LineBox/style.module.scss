@@ -1,0 +1,16 @@
+.Container {
+  padding: calc(100vw*(40/1920));
+  background: #ffffff;
+  .Innder {
+    position: relative;
+    padding: calc(100vw*(40/1920));
+    & i {
+      position: absolute;
+      width: calc(100vw*(40/1920)); height: calc(100vw*(40/1920));
+      &:nth-last-child(1) {top: 0; left: 0; border-top: calc(100vw*(2/1920)) solid #000000; border-left: calc(100vw*(2/1920)) solid #000000;}
+      &:nth-last-child(2) {top: 0; right: 0; border-top: calc(100vw*(2/1920)) solid #000000; border-right: calc(100vw*(2/1920)) solid #000000;}
+      &:nth-last-child(3) {bottom: 0; right: 0; border-bottom: calc(100vw*(2/1920)) solid #000000; border-right: calc(100vw*(2/1920)) solid #000000;}
+      &:nth-last-child(4) {bottom: 0; left: 0; border-bottom: calc(100vw*(2/1920)) solid #000000; border-left: calc(100vw*(2/1920)) solid #000000;}
+    }
+  }
+}

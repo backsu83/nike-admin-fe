@@ -1,0 +1,40 @@
+.HeaderContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; height: calc(100vw*(84/1920));
+  .Logo {
+    position: absolute; left: 0; top: 0;
+    width: calc(100vw*(152/1920));
+    cursor: pointer;
+  }
+  .MenuList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100vw*(227/1920)); height: calc(100vw*(84/1920));
+      font-size: calc(100vw*(24/1920));
+      text-align: center;
+      font-weight: 900;
+      font-family:'HelveticaNeue';
+      cursor: pointer;
+    }
+  }
+  .Logout {
+    position: absolute; right: 0; top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw*(226/1920)); height: calc(100vw*(84/1920));
+    font-size: calc(100vw*(24/1920));
+    text-align: center;
+    font-weight: 900;
+    font-family:'HelveticaNeue';
+    cursor: pointer;
+  }
+}

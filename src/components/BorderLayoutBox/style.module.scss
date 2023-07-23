@@ -1,0 +1,15 @@
+.LayoutContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto calc(100vw*(70/1920));
+    background: #ffffff;
+    & i {position: absolute; display: block; width: calc(100vw*(114/1920)); height: calc(100vw*(114/1920));}
+    & i:first-child {top: 0; left: 0; border-top: calc(100vw*(8/1920)) solid #000000; border-left: calc(100vw*(8/1920)) solid #000000;}
+    & i:nth-child(2) {top: 0; right: 0; border-top: calc(100vw*(8/1920)) solid #000000; border-right: calc(100vw*(8/1920)) solid #000000;}
+    & i:nth-child(3) {bottom: 0; right: 0; border-bottom: calc(100vw*(8/1920)) solid #000000; border-right: calc(100vw*(8/1920)) solid #000000;}
+    & i:nth-child(4) {bottom: 0; left: 0; border-bottom: calc(100vw*(8/1920)) solid #000000; border-left: calc(100vw*(8/1920)) solid #000000;}
+}

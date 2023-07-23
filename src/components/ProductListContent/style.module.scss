@@ -1,0 +1,132 @@
+.Container {
+    width: 100%;
+    padding: calc(100vw*(42/1920)) calc(100vw*(52/1920));
+    .OrderListWrap {
+        width: 100%;
+        margin-top: calc(100vw*(25/1920));
+        .OrderInner {
+            display: flex;
+            align-items: flex-start;
+            .OrderBox {
+                position: relative;
+                width: calc(100vw*(410/1920));
+                padding-bottom: calc(100vw*(20/1920));
+                &::after {
+                    content: '';
+                    position: absolute; top: 0; right: 0;
+                    width: 1px; height: 100%;
+                    background-image: linear-gradient(to 
+                    bottom, black 52%, rgba(255,255,255,0) 0%);
+                    background-position: bottom;
+                    background-size: 1px calc(100vw*(27/1920));
+                    background-repeat: repeat-y;
+                }
+                &:last-child:after {display: none;}
+                &:first-child {
+                    width: calc(100vw*(393/1920));
+                    .OrderTitle {padding-left: 0;}
+                    .ListWrap {padding-left: 0;}
+                }
+                &:last-child {
+                    width: calc(100vw*(393/1920));
+                    .OrderTitle {padding-right: 0;}
+                    .ListWrap {padding-right: 0;}
+                }
+                .OrderTitleBtnWrap {
+                    position: relative;
+                    width: 100%;
+                    .OrderTitle {
+                        width: 100%;
+                        font-size: calc(100vw*(20/1920));
+                        padding: calc(100vw*(8/1920)) calc(100vw*(16/1920)) calc(100vw*(10/1920));
+                        background-image: linear-gradient(to 
+                        right, black 52%, rgba(255,255,255,0) 0%);
+                        background-position: bottom;
+                        background-size: calc(100vw*(27/1920)) 1px;
+                        background-repeat: repeat-x;
+                        & span {font-weight: bold; margin-left: calc(100vw*(5/1920));}
+                    }
+                    & button {
+                        position: absolute; top: 50%; right: calc(100vw*(16/1920));
+                        font-size: calc(100vw*(16/1920));
+                        font-weight: bold;
+                        border-bottom: 1px solid #000000;
+                        cursor: pointer;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                }
+                .ListWrap {
+                    margin-top: calc(100vw*(32/1920));
+                    padding: 0 calc(100vw*(16/1920));
+                    .ListBox {
+                        border: calc(100vw*(2/1920)) solid #000000;
+                        margin-bottom: calc(100vw*(16/1920));
+                        &:last-child {margin-bottom: 0;}
+                        .ListTitleBox {
+                            display: flex; align-items: center; justify-content: space-between;
+                            padding: calc(100vw*(8/1920));
+                            background: #000000;
+                            border-bottom: calc(100vw*(2/1920)) solid #000000;
+                            & p {font-size: calc(100vw*(16/1920)); font-weight: bold; color: #ffffff;}
+                            & button {font-size: calc(100vw*(16/1920)); font-weight: bold; color: #ffffff; cursor: pointer;}
+                        }
+                        .RowListContent {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            position: relative;
+                            padding: calc(100vw*(12/1920));
+                            .ListImgBox {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: calc(100vw*(130/1920));
+                                & img {max-width: 100%; width: auto; object-fit: contain;}
+                            }
+                            .ListLogoBox {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: calc(100vw*(72/1920)); height: calc(100vw*(72/1920));
+                                border: 1px solid #000000;
+                                & img {max-width: 100%; height: calc(100vw*(72/1920)); width: auto; object-fit: contain;}
+                            }
+                            .SubTitle {
+                                font-size: calc(100vw*(12/1920));
+                                margin-bottom: calc(100vw*(15/1920));
+                                .Price {display: block; margin-top: calc(100vw*(4/1920));}
+                                & span {font-size: calc(100vw*(16/1920));}
+                            }
+                            & p {
+                                font-size: calc(100vw*(16/1920));
+                                margin-bottom: calc(100vw*(8/1920));
+                                & span {font-weight: bold;}
+                                .ColorChip {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: calc(100vw*(4/1920));
+                                    & span {
+                                        width: calc(100vw*(16/1920)); height: calc(100vw*(16/1920));
+                                        margin-right: calc(100vw*(4/1920));
+                                        &:last-child {margin-right: 0;}
+                                    }
+                                }
+                            }
+                            .DateText {margin-top: calc(100vw*(25/1920));}
+                        }
+                        .ListContent {
+                            position: relative;
+                            padding: calc(100vw*(12/1920));
+                            & p {
+                                font-size: calc(100vw*(16/1920));
+                                margin-bottom: calc(100vw*(8/1920));
+                                & span {font-weight: bold;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

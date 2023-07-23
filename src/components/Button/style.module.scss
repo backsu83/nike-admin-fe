@@ -1,0 +1,17 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  & button {
+    position: relative;
+    font-size: calc(100vw*(24/1920));
+    font-family:'HelveticaNeue_bold';
+    font-weight: 900;
+    padding: calc(100vw*(15/1920)) calc(100vw*(22/1920));
+    border: calc(100vw*(4/1920)) solid #000000;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: calc(100vw*(5/1920)) calc(100vw*(5/1920)) 0 #686868;
+  }
+}

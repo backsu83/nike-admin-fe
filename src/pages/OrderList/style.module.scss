@@ -1,0 +1,17 @@
+@import "../style.module.scss";
+
+.Container {
+    @include Container();
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    .BoxWrap {
+        width: calc(100vw*(1710/1920));
+        margin: calc(100vw*(58/1920)) auto 0;
+    
+    }
+}
+
+
+

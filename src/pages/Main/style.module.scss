@@ -1,0 +1,26 @@
+@import "../style.module.scss";
+
+// common tablete
+.MainContainer {
+    @include Container();
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    .LogoWrap {width: calc(100vw*(842/1920));}
+    .LoginWrap {width: calc(100vw*(766/1920)); margin-left: calc(100vw*(85/1920));}
+    .InputRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100vw*(400/1920));
+        margin: 0 auto calc(100vw*(32/1920));
+        &:last-child {margin-bottom: 0;}
+        & p {width: calc(100vw*(120/1920)); font-size: calc(100vw*(40/1920)); font-family:'Neue';}
+        & input {width: calc(100vw*(280/1920)); font-size: calc(100vw*(32/1920)); font-weight: 900;
+            border-bottom: calc(100vw*(2/1920)) solid #000000; padding: 0 calc(100vw*(24/1920));}
+    }
+}
+
+
+
